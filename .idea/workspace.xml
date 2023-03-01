@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4c931237-964d-4720-998c-77e724926e7a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/WeatherShoppersTestBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/constants/URLConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/constants/WeatherShoppersConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/constants/WeatherShoppersTextConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/DataStructureHelpers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/pages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/pages/MoisturizersPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/pages/PaymentConfirmationPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/pages/QXF2Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/pages/SunScreenPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/pages/WebBasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/roughwork/Log4jHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/roughwork/RoughTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/utils/AssertUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/utils/ElementActions.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/utils/GetPath.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/utils/Waits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CartTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MoisturizersTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/SunScreenTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/htmlReport" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="e92d4815-2edd-4951-b895-084026e74628" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectId" id="2MKsSQ3NQMYI3svybszYedfrtDN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/tp/Documents/Pract/WeatherShoppersSeleniumJava",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="co.weathershoppers.assignment.utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG./Users/tp/Documents/Pract/WeatherShoppersSeleniumJava/testng.xml">
+    <configuration name="RoughTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.roughwork.RoughTest" />
+      <module name="WeatherShoppersSeleniumJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="co.weathershoppers.assignment.roughwork.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CartTests.testFillAndSubmitPaymentForm" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherShoppersSeleniumJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CartTests" />
+      <option name="METHOD_NAME" value="testFillAndSubmitPaymentForm" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MoisturizersTest.verifyUIFeaturesOfMoisturizersPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherShoppersSeleniumJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MoisturizersTest" />
+      <option name="METHOD_NAME" value="verifyUIFeaturesOfMoisturizersPage" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SunScreenTests.testSunScreenAddLeastExpensiveProductOnCartFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherShoppersSeleniumJava" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SunScreenTests" />
+      <option name="METHOD_NAME" value="testSunScreenAddLeastExpensiveProductOnCartFunctionality" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/tp/Documents/Pract/WeatherShoppersSeleniumJava/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WeatherShoppersSeleniumJava" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/tp/Documents/Pract/WeatherShoppersSeleniumJava/testng.xml" />
+        <item itemvalue="TestNG.SunScreenTests.testSunScreenAddLeastExpensiveProductOnCartFunctionality" />
+        <item itemvalue="TestNG.CartTests.testFillAndSubmitPaymentForm" />
+        <item itemvalue="TestNG.MoisturizersTest.verifyUIFeaturesOfMoisturizersPage" />
+        <item itemvalue="Application.RoughTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4c931237-964d-4720-998c-77e724926e7a" name="Changes" comment="" />
+      <created>1677527610454</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1677527610454</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/WeatherShoppersSeleniumJava$HomeTests_verifyBuyMoisturizersButtonWorking.ic" NAME="HomeTests.verifyBuyMoisturizersButtonWorking Coverage Results" MODIFIED="1677534042677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
