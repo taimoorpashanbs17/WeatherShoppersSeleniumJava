@@ -38,7 +38,7 @@ public class HomeTests extends WebBasePage {
     @Test(groups = {"Regression"})
     @Description("Shop for moisturizers if the weather is below 19 degrees. Shop for SunScreens if the weather " +
             "is above 34 degrees.")
-    public void verifyShoppingMenu(){
+    public void verifyShoppingUnderTemperatureCircumstances(){
         Integer temperature = homePage.getTemperature();
         homePage.selectShoppingAccordingly(temperature);
     }

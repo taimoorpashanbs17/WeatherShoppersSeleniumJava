@@ -2,7 +2,7 @@ package co.weathershoppers.assignment.constants;
 
 public class WeatherShoppersConstants {
     public static final Integer TIME_TO_WAIT = 30;
-    public static final String BROWSER_NAME = "Chrome";
+    public static final Boolean HEADLESS = true;
 
     public static final String EMAIL = "taimoorpasha@gmail.com";
     public static final Integer CARD_NUMBER = 4242;

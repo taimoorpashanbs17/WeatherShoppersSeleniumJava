@@ -3,12 +3,17 @@ package co.weathershoppers.assignment;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import static co.weathershoppers.assignment.constants.URLConstants.BASE_URL;
 import static co.weathershoppers.assignment.pages.WebBasePage.initAllWebPages;
+
+import static co.weathershoppers.assignment.constants.WeatherShoppersConstants.HEADLESS;
 
 
 import java.util.HashMap;
@@ -22,6 +27,8 @@ public class WeatherShoppersTestBase {
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
     public static void createLocalWebDriver() {
+
+        WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions = new ChromeOptions();
         WebDriverManager.chromedriver().setup();
         Map<String, Object> preferences = new HashMap<>();
