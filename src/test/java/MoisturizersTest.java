@@ -7,7 +7,7 @@ public class MoisturizersTest extends WebBasePage {
     @Description("Add two moisturizers to your cart. First, select the least expensive moisturizer that contains Aloe. " +
             "For your second moisturizer, select the least expensive moisturizer that contains almond. C" +
             "lick on cart when you are done.")
-    public void verifyUIFeaturesOfMoisturizersPage() {
+    public void testMoisturizersAddLeastExpensiveProductOnCartFunctionality() {
         homePage.clickOnBuyMoisturizersButton();
         moisturizersPage.addLeastExpensiveAloeProductOnCart();
         moisturizersPage.addLeastExpensiveAlmondsProductOnCart();
