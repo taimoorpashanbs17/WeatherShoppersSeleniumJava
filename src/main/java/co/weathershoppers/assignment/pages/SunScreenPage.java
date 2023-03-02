@@ -48,7 +48,7 @@ public class SunScreenPage {
     }
 
     public List<String> listOfSunScreenNames() {
-        waitForWebElementClickable(nameOfProduct, TIME_TO_WAIT);
+        waitForWebElementClickable(nameOfProduct, TIME_TO_WAIT, "SunScreen Product");
         return generateTextList(nameOfProducts);
     }
 
@@ -105,7 +105,7 @@ public class SunScreenPage {
     }
 
     public void clickOnCartButton(){
-        waitForWebElementTillDisplayedAndClickable(cartButton, TIME_TO_WAIT);
-        clickWebElement(cartButton);
+        waitForWebElementTillDisplayedAndClickable(cartButton, TIME_TO_WAIT, "Cart Button");
+        clickWebElement(cartButton, "Cart Button");
     }
 }

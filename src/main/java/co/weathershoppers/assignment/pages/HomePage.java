@@ -76,8 +76,9 @@ public class HomePage {
      *
      */
     public void clickOnBuyMoisturizersButton(){
-        waitForWebElementTillDisplayedAndClickable(buyMoisturizersButton, TIME_TO_WAIT);
-        clickWebElement(buyMoisturizersButton);
+        waitForWebElementTillDisplayedAndClickable(buyMoisturizersButton, TIME_TO_WAIT,
+                "Buy Moisturizer Button");
+        clickWebElement(buyMoisturizersButton, "Buy Moisturizer Button");
     }
 
     /**
@@ -87,8 +88,9 @@ public class HomePage {
      */
 
     public void clickOnBuySunScreensButton(){
-        waitForWebElementTillDisplayedAndClickable(buySunScreensButton, TIME_TO_WAIT);
-        clickWebElement(buySunScreensButton);
+        waitForWebElementTillDisplayedAndClickable(buySunScreensButton, TIME_TO_WAIT,
+                "Buy SunScreen Button");
+        clickWebElement(buySunScreensButton, "Buy SunScreen Button");
     }
 
     /**
@@ -97,8 +99,8 @@ public class HomePage {
      *
      */
     public void clickOnQXF2Link(){
-        waitForWebElementTillDisplayedAndClickable(qxf2Link, TIME_TO_WAIT);
-        clickWebElement(qxf2Link);
+        waitForWebElementTillDisplayedAndClickable(qxf2Link, TIME_TO_WAIT, "Q2XF Link");
+        clickWebElement(qxf2Link, "Q2XF Link");
     }
 
     /**

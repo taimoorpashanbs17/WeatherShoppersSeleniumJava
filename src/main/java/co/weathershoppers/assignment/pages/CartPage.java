@@ -54,29 +54,29 @@ public class CartPage {
     }
 
     public void clickOnPayWithCard(){
-        waitForWebElementTillDisplayedAndClickable(payWithCard, TIME_TO_WAIT);
-        clickWebElement(payWithCard);
+        waitForWebElementTillDisplayedAndClickable(payWithCard, TIME_TO_WAIT, "Pay with Card Button");
+        clickWebElement(payWithCard, "Pay with Card Button");
     }
 
     public void enterCreditCardInformation(String email, String cardNumber, String month, String year,
                                            String cvcNumber, String zipCode) {
         waitForNavigationToIFrame(0, TIME_TO_WAIT);
-        waitForWebElementTillDisplayedAndClickable(emailField, TIME_TO_WAIT);
+        waitForWebElementTillDisplayedAndClickable(emailField, TIME_TO_WAIT, "Email Field");
         sendTextToWebElement(emailField, "Email Field", email);
-        waitForWebElementTillDisplayedAndClickable(cardNumberField, TIME_TO_WAIT);
+        waitForWebElementTillDisplayedAndClickable(cardNumberField, TIME_TO_WAIT, "Credit Card Field");
         sendTextToWebElement(cardNumberField, "Credit Card Field", cardNumber);
-        waitForWebElementClickable(cardNumberField, TIME_TO_WAIT);
+        waitForWebElementClickable(cardNumberField, TIME_TO_WAIT, "Credit Card Field");
         sendTextToWebElement(cardNumberField, "Credit Card Field", cardNumber);
-        waitForWebElementClickable(cardNumberField, TIME_TO_WAIT);
+        waitForWebElementClickable(cardNumberField, TIME_TO_WAIT, "Credit Card Field");
         sendTextToWebElement(cardNumberField, "Credit Card Field", cardNumber);
-        waitForWebElementClickable(cardNumberField, TIME_TO_WAIT);
+        waitForWebElementClickable(cardNumberField, TIME_TO_WAIT, "Credit Card Field");
         sendTextToWebElement(cardNumberField, "Credit Card Field", cardNumber);
         sendTextToWebElement(monthYearExpiryField, "Month and Year Expiry Field", month);
         sendTextToWebElement(cvcField, "CVC Field", cvcNumber);
         sendTextToWebElement(monthYearExpiryField, "Month and Year Expiry Field", year);
         sendTextToWebElement(zipCodeField, "Zip Code Field", zipCode);
-        waitForWebElementTillDisplayedAndClickable(payButton, TIME_TO_WAIT);
-        clickWebElement(payButton);
+        waitForWebElementTillDisplayedAndClickable(payButton, TIME_TO_WAIT, "Pay Button");
+        clickWebElement(payButton, "Pay Button");
         getWebDriver().switchTo().defaultContent();
     }
 }

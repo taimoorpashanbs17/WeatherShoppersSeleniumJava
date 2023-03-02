@@ -1,6 +1,6 @@
-package co.weathershoppers.assignment.utils;
+package co.weathershoppers.assignment.helpers;
 
-public class GetPath {
+public class PathHelpers {
     public static String getFile(String filename) {
         String absoluteFilePath = "";
         try {
@@ -55,7 +55,23 @@ public class GetPath {
         return absoluteFilePath;
     }
 
-    public static void main(String[] args){
-        System.out.println(getDirectoryPath("logs"));
+    public static String getFolderWithFile(String directoryName, String fileName){
+        String getDirectoryPath = PathHelpers.getDirectoryPath(directoryName);
+        String absoluteFilePath = "";
+        try{
+            String your_os = System.getProperty("os.name").toLowerCase();
+            if (your_os.contains("win")) {
+                absoluteFilePath = getDirectoryPath + "\\" + fileName;
+            } else if (your_os.contains("nix") ||
+                    your_os.contains("nux") ||
+                    your_os.contains("mac")) {
+                absoluteFilePath = getDirectoryPath + "/"+ fileName;
+            } else {
+                absoluteFilePath = getDirectoryPath + "/"+ fileName;
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return absoluteFilePath;
     }
 }

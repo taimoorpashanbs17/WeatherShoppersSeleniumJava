@@ -34,12 +34,12 @@ public class PaymentConfirmationPage {
     }
 
     public void verifyPaymentStatus(String paymentMessage){
-        waitForWebElement(paymentStatusHeader, TIME_TO_WAIT);
+        waitForWebElement(paymentStatusHeader, TIME_TO_WAIT, "Payment Status Header");
         verifyWebElementTextIs(paymentStatusHeader, "Payment Status Header Text", paymentMessage);
     }
 
     public void verifyPaymentMessage(String paymentTextMessage){
-        waitForWebElement(paymentMessage, TIME_TO_WAIT);
+        waitForWebElement(paymentMessage, TIME_TO_WAIT, "Payment Message");
         verifyWebElementTextIs(paymentMessage, "Payment Message Text", paymentTextMessage);
     }
 
