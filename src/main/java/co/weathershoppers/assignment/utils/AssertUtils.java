@@ -4,16 +4,16 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 
 import static co.weathershoppers.assignment.WeatherShoppersTestBase.getWebDriver;
-import static co.weathershoppers.assignment.utils.Waits.waitForWebElement;
+import static co.weathershoppers.assignment.helpers.Log4jHelper.log;
 
 public class AssertUtils {
 
-    public static void verifyURLEquals(String url){
+    public static void verifyURLEquals(String url) {
         String currentURL = getWebDriver().getCurrentUrl();
-        if(currentURL.equals(url)){
-            System.out.println("Url is same");
-        }else {
-            System.out.println(url+ " is not correct URL");
+        if (currentURL.equals(url)) {
+            log().info("Url is correct i.e. " + url);
+        } else {
+            log().error("Expected URL is " + url + " but current URL is " + currentURL);
 
         }
     }
@@ -21,28 +21,28 @@ public class AssertUtils {
     public static void assertElementVisible(WebElement webElement, String elementName) {
         try {
             webElement.isDisplayed();
+            log().info(elementName + " is displaying.");
         } catch (NoSuchElementException noSuchElementException) {
-            System.out.println(elementName + " is not visible.");
+            log().error(elementName + " is not visible.");
         }
     }
 
     public static void verifyWebElementTextIs(WebElement webElement, String elementName, String expectedText) {
         String actualText = webElement.getText();
         if (actualText.equals(expectedText)) {
-            System.out.println("Text is correct.");
+            log().info(expectedText + " on " + elementName + " field is showing.");
         } else {
-            System.out.println("Text of "+elementName+" is not "+expectedText+" , actual text is "+actualText);
+            log().error("Text of " + elementName + " is not " + expectedText + " , actual text is " + actualText);
         }
     }
 
     public static void verifyWebElementContainsText(WebElement webElement, String elementName, String containedText) {
         String actualText = webElement.getText();
         if (actualText.contains(containedText)) {
-            System.out.println("Text is correct.");
+            log().info(elementName + " does contains [" + containedText + "] Text");
         } else {
-            System.out.println("Text of "+elementName+" does not contain "+containedText+" , " +
-                    "actual text is "+actualText);
-
+            log().error("Text of " + elementName + " does not contain " + containedText + " , " +
+                    "actual text is " + actualText);
         }
     }
 }
