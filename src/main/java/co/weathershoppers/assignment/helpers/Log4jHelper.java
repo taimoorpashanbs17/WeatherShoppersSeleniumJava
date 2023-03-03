@@ -1,5 +1,4 @@
 package co.weathershoppers.assignment.helpers;
-import co.weathershoppers.assignment.roughwork.RunLogFile;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
@@ -17,7 +16,7 @@ public class Log4jHelper {
     static final String logFile = getFolderWithFile("logs", "log4j.log");
     static final String logDirectory = getDirectoryPath("logs");
 
-    public void createPropertyFile() throws IOException {
+    public static void createPropertyFile() throws IOException {
         Properties props = new Properties();
         props.put("log4j.rootLogger", "DEBUG, stdout, file");
         props.put("log4j.appender.stdout", "org.apache.log4j.ConsoleAppender");
@@ -36,9 +35,9 @@ public class Log4jHelper {
         PropertyConfigurator.configure(propertiesFile);
     }
 
-    public static Logger log(){
+    public static Logger log() {
         return Logger.getLogger(
-                RunLogFile.class.getName());
+                Log4jHelper.class.getName());
     }
 
 }
