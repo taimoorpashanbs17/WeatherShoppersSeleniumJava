@@ -3,19 +3,17 @@ package co.weathershoppers.assignment;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.*;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxProfile;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
 import static co.weathershoppers.assignment.constants.URLConstants.BASE_URL;
 import static co.weathershoppers.assignment.pages.WebBasePage.initAllWebPages;
 
-import static co.weathershoppers.assignment.constants.WeatherShoppersConstants.HEADLESS;
+import static co.weathershoppers.assignment.helpers.Log4jHelper.createPropertyFile;
 
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -39,15 +37,15 @@ public class WeatherShoppersTestBase {
         driver.get().manage().window().maximize();
     }
 
-    public static void startWebBrowser() {
-
+    public static void startWebBrowser() throws IOException {
+        createPropertyFile();
         createLocalWebDriver();
         initAllWebPages();
         getWebDriver();
     }
 
     @BeforeMethod(alwaysRun = true)
-    public void setUp() {
+    public void setUp() throws IOException {
         startWebBrowser();
     }
 
