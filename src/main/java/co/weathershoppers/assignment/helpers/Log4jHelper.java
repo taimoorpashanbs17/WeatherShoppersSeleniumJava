@@ -5,15 +5,15 @@ import org.apache.log4j.PropertyConfigurator;
 import java.io.IOException;
 import java.io.FileWriter;
 import java.util.Properties;
-import static co.weathershoppers.assignment.helpers.PathHelpers.getFile;
-import static co.weathershoppers.assignment.helpers.PathHelpers.getFolderWithFile;
-import static co.weathershoppers.assignment.helpers.PathHelpers.getDirectoryPath;
+import static co.weathershoppers.assignment.helpers.PathHelper.getFile;
+import static co.weathershoppers.assignment.helpers.PathHelper.getFolderWithFile;
+import static co.weathershoppers.assignment.helpers.PathHelper.getDirectoryPath;
 
 
 public class Log4jHelper {
 
     static final String propertiesFile = getFile("log4j.properties");
-    static final String logFile = getFolderWithFile("logs", "log4j.log");
+    static final String logFile = getFolderWithFile("logs", "TestingAutomationLogs.log");
     static final String logDirectory = getDirectoryPath("logs");
 
     public static void createPropertyFile() throws IOException {

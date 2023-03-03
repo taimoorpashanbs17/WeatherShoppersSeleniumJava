@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c931237-964d-4720-998c-77e724926e7a" name="Changes" comment="First Changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/FileHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/browser.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/WeatherShoppersTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/WeatherShoppersTestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/constants/WeatherShoppersConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/constants/WeatherShoppersConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/Log4jHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/Log4jHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/PathHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/PathHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/roughwork/RoughTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/roughwork/RoughTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,9 +75,9 @@
       <recent name="co.weathershoppers.assignment.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.RunLogFile">
-    <configuration name="Log4jHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.helpers.Log4jHelper" />
+  <component name="RunManager" selected="TestNG.HomeTests.verifyShoppingUnderTemperatureCircumstances">
+    <configuration name="FileHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.helpers.FileHelper" />
       <module name="WeatherShoppersSeleniumJava" />
       <extension name="coverage">
         <pattern>
@@ -84,8 +89,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunLogFile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.roughwork.RunLogFile" />
+    <configuration name="PathHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.helpers.PathHelper" />
       <module name="WeatherShoppersSeleniumJava" />
       <extension name="coverage">
         <pattern>
@@ -109,11 +114,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SunScreenTests.testSunScreenAddLeastExpensiveProductOnCartFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTests.verifyShoppingUnderTemperatureCircumstances" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WeatherShoppersSeleniumJava" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SunScreenTests" />
-      <option name="METHOD_NAME" value="testSunScreenAddLeastExpensiveProductOnCartFunctionality" />
+      <option name="MAIN_CLASS_NAME" value="HomeTests" />
+      <option name="METHOD_NAME" value="verifyShoppingUnderTemperatureCircumstances" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -121,10 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="/Users/tp/Documents/Pract/WeatherShoppersSeleniumJava/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeTests.verifyUIFeaturesOfHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WeatherShoppersSeleniumJava" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HomeTests" />
+      <option name="METHOD_NAME" value="verifyUIFeaturesOfHomePage" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -133,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.RunLogFile" />
-        <item itemvalue="Application.Log4jHelper" />
-        <item itemvalue="TestNG./Users/tp/Documents/Pract/WeatherShoppersSeleniumJava/testng.xml" />
-        <item itemvalue="TestNG.SunScreenTests.testSunScreenAddLeastExpensiveProductOnCartFunctionality" />
+        <item itemvalue="TestNG.HomeTests.verifyShoppingUnderTemperatureCircumstances" />
+        <item itemvalue="Application.FileHelper" />
+        <item itemvalue="Application.PathHelper" />
         <item itemvalue="TestNG.CartTests.testFillAndSubmitPaymentForm" />
+        <item itemvalue="TestNG.HomeTests.verifyUIFeaturesOfHomePage" />
       </list>
     </recent_temporary>
   </component>
