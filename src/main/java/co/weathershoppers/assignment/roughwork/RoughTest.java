@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,7 +17,7 @@ import static java.lang.Integer.parseInt;
 
 public class RoughTest extends WeatherShoppersTestBase {
 
-    public static void main (String[] args) throws InterruptedException {
+    public static void main (String[] args) throws InterruptedException, IOException {
         startWebBrowser();
         WebDriverWait wait = new WebDriverWait(getWebDriver(), 30);
 
