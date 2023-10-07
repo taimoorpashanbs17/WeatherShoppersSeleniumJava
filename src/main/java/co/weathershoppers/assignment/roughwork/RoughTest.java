@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.IOException;
+import java.time.Duration;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,7 +20,7 @@ public class RoughTest extends WeatherShoppersTestBase {
 
     public static void main (String[] args) throws InterruptedException, IOException {
         startWebBrowser();
-        WebDriverWait wait = new WebDriverWait(getWebDriver(), 30);
+        WebDriverWait wait = new WebDriverWait(getWebDriver(), Duration.ofSeconds(30));
 
         getWebDriver().get("https://weathershopper.pythonanywhere.com/");
         wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//button[normalize-space()='Buy moisturizers']")));

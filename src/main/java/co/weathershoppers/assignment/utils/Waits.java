@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import static co.weathershoppers.assignment.helpers.Log4jHelper.log;
@@ -21,19 +22,17 @@ public class Waits {
                     .ignoreExceptions()
                     .until(element::isEnabled);
         } catch (Exception ex) {
-            log().error("Waited for "+waitTime+" seconds, but "+elementName+" didn't get displayed, due to " +
-                    ""+ex.getMessage());
+            log().error("Waited for "+waitTime+" seconds, but "+elementName+" didn't get displayed, due to " +ex.getMessage());
         }
     }
 
     public static void waitForWebElementClickable(WebElement element, int waitTime, String elementName) {
         log().info("Waiting for "+elementName+ " to be clickable");
         try {
-            WebDriverWait wait = new WebDriverWait(getWebDriver(), waitTime);
+            WebDriverWait wait = new WebDriverWait(getWebDriver(), Duration.ofSeconds(waitTime));
             wait.until(ExpectedConditions.elementToBeClickable(element));
         } catch (Exception var5) {
-            log().error("Unable to click "+elementName+" within " +
-                    ""+waitTime+" seconds, due to "+var5.getMessage());
+            log().error("Unable to click "+elementName+" within " +waitTime+" seconds, due to "+var5.getMessage());
         }
     }
 
@@ -45,7 +44,7 @@ public class Waits {
     public static void waitForNavigationToIFrame(int frameIndex, int waitTime) {
         log().info("Waiting to Navigate "+frameIndex+" index iFrame");
         try {
-            WebDriverWait wait = new WebDriverWait(getWebDriver(), waitTime);
+            WebDriverWait wait = new WebDriverWait(getWebDriver(), Duration.ofSeconds(waitTime));
             wait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameIndex));
         } catch (Exception var5) {
             log().error("Unable to navigate to "+frameIndex+" index iFrame, within "+waitTime+
@@ -56,11 +55,10 @@ public class Waits {
     public static void waitTillURLToBe(String url, int waitTime) {
         log().info("Waiting for URL to be "+url);
         try {
-            WebDriverWait wait = new WebDriverWait(getWebDriver(), waitTime);
+            WebDriverWait wait = new WebDriverWait(getWebDriver(), Duration.ofSeconds(waitTime));
             wait.until(ExpectedConditions.urlToBe(url));
         } catch (Exception var5) {
-            log().error("URL is not changed to "+url+" , within " +
-                    ""+waitTime+" seconds, due to "+var5.getMessage());
+            log().error("URL is not changed to "+url+" , within " +waitTime+" seconds, due to "+var5.getMessage());
         }
     }
 }
