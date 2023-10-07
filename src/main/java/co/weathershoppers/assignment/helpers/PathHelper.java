@@ -1,29 +1,27 @@
 package co.weathershoppers.assignment.helpers;
 
+import java.io.FileNotFoundException;
+
 public class PathHelper {
     public static String getFile(String filename) {
         String absoluteFilePath = "";
-        try {
 
-            String your_os = System.getProperty("os.name").toLowerCase();
-            String workingDir;
+        String your_os = System.getProperty("os.name").toLowerCase();
+        String workingDir;
 
-            workingDir = System.getProperty("user.dir");
-            String directoryName;
-            if (your_os.contains("win")) {
-                directoryName = "src\\main\\resources";
-                absoluteFilePath = workingDir + "\\" + directoryName + "\\" + filename;
-            } else if (your_os.contains("nix") ||
-                    your_os.contains("nux") ||
-                    your_os.contains("mac")) {
-                directoryName = "src/main/resources";
-                absoluteFilePath = workingDir + "/" + directoryName + "/" + filename;
-            } else {
-                directoryName = "src/main/resources";
-                absoluteFilePath = workingDir + "/" + directoryName + "/" + filename;
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
+        workingDir = System.getProperty("user.dir");
+        String directoryName;
+        if (your_os.contains("win")) {
+            directoryName = "src\\main\\resources";
+            absoluteFilePath = workingDir + "\\" + directoryName + "\\" + filename;
+        } else if (your_os.contains("nix") ||
+                your_os.contains("nux") ||
+                your_os.contains("mac")) {
+            directoryName = "src/main/resources";
+            absoluteFilePath = workingDir + "/" + directoryName + "/" + filename;
+        } else {
+            directoryName = "src/main/resources";
+            absoluteFilePath = workingDir + "/" + directoryName + "/" + filename;
         }
         return absoluteFilePath;
     }
@@ -50,7 +48,7 @@ public class PathHelper {
                 absoluteFilePath = workingDir + "/" + directoryPath + "/" + directoryName;
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            e.getMessage();
         }
         return absoluteFilePath;
     }
@@ -70,7 +68,7 @@ public class PathHelper {
                 absoluteFilePath = getDirectoryPath + "/"+ fileName;
             }
         } catch (Exception e) {
-            e.printStackTrace();
+            e.getMessage();
         }
         return absoluteFilePath;
     }
