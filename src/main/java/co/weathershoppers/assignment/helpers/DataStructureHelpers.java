@@ -74,7 +74,7 @@ public class DataStructureHelpers {
             productAddButton.click();
         }
         catch (NoSuchElementException e) {
-            System.out.println("Unable to Find "+productName+", due to "+e.getMessage());
+            System.out.println("Unable to Find "+productName+", due to "+e);
         }
     }
 }

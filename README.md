@@ -13,9 +13,12 @@ Automation Framework for Web app of [Weather Shopper](https://weathershopper.pyt
 
 **Reports** : Allure Reports
 
-**Browser** : Chrome
+**Browser** : Chrome and Firefox
 
 **OS** : Any (Windows, Mac OSX, Linux)
+
+**Note**: Since latest versions of selenium does not support Chrome more than 114, so we shall be working with 
+Firefox now.
 
 ## Testing Scope
 
@@ -54,6 +57,8 @@ All Important Test cases , which are defined on 'Testing Scope', are mentioned i
 ```bash
   mvn clean test -DsuiteXmlFile=testng.xml 
 ```
+
+If you want to run headless, then on ```src/main/resources/log4j.properties``` file, change ```app.headless``` parameter to ```true```
 
 
 ## Generating Allure Report

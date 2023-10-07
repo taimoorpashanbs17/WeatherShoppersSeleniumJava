@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4c931237-964d-4720-998c-77e724926e7a" name="Changes" comment="First Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4c931237-964d-4720-998c-77e724926e7a" name="Changes" comment="Initial Changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/PathHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/PathHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/roughwork/RoughTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/roughwork/RoughTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/utils/Waits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/utils/Waits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/DataStructureHelpers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/DataStructureHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/browser.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/browser.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -151,6 +149,15 @@
       <option name="presentableId" value="Default" />
       <updated>1677527610454</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial Changes.">
+      <option name="closed" value="true" />
+      <created>1696684643055</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1696684643055</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +170,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Changes." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WeatherShoppersSeleniumJava$HomeTests_verifyBuyMoisturizersButtonWorking.ic" NAME="HomeTests.verifyBuyMoisturizersButtonWorking Coverage Results" MODIFIED="1677534042677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
