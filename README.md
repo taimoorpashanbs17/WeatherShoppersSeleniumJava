@@ -45,7 +45,7 @@ Navigate to Folder
 
 Install all maven dependencies
 ```bash
-  mvn clean install
+  mvn clean install -DskipTests
 ```
 
 
@@ -55,10 +55,27 @@ All Important Test cases , which are defined on 'Testing Scope', are mentioned i
 
 
 ```bash
-  mvn clean test -DsuiteXmlFile=testng.xml 
+  mvn clean test 
+```
+By Default 'Chrome' browser will start initiated with all test execution.
+
+But Firefox can also be started with following command:
+
+```bash
+  mvn test -Dbrowser="firefox" 
 ```
 
-If you want to run headless, then on ```src/main/resources/log4j.properties``` file, change ```app.headless``` parameter to ```true```
+And if you want to run with headless, you have to pass arguments with ```headless``` and run command like:
+
+```bash
+  mvn test -Dheadless="yes" 
+```
+By Default, it will run 'Chrome' browser, but if you want to run with 'Firefox', then run:
+
+```bash
+  mvn test -Dbrowser="firefox" -Dheadless="yes" 
+```
+
 
 
 ## Generating Allure Report

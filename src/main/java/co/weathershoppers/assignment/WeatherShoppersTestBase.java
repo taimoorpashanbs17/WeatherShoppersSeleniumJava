@@ -16,10 +16,6 @@ import static co.weathershoppers.assignment.pages.WebBasePage.initAllWebPages;
 import static co.weathershoppers.assignment.helpers.Log4jHelper.createPropertyFile;
 import static co.weathershoppers.assignment.helpers.Log4jHelper.log;
 
-import static co.weathershoppers.assignment.helpers.PathHelper.getFile;
-
-import static co.weathershoppers.assignment.helpers.FileHelper.getPropertiesFileProperty;
-
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -32,19 +28,18 @@ public class WeatherShoppersTestBase {
     }
 
     public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    public static String headlessProperty = System.getProperty("headless", "no");
 
-    public static String browserPropertiesFilePath = getFile("browser.properties");
-    public static String BROWSER_NAME = getPropertiesFileProperty(browserPropertiesFilePath).getProperty("app.browser");
-
-    public static String HEADLESS = getPropertiesFileProperty(browserPropertiesFilePath).getProperty("app.headless");
+    public static String browser = System.getProperty("browser", "chrome");
 
 
-    public static void createLocalWebDriver() {
-        log().info("Starting Testing on "+BROWSER_NAME+" browser");
-        if (BROWSER_NAME.startsWith("Firefox")) {
+
+    public static void createLocalWebDriver() throws IOException {
+        log().info("Starting Testing on "+browser+" browser");
+        if (browser.startsWith("firefox")) {
             WebDriverManager.firefoxdriver().setup();
             FirefoxOptions firefoxOptions = new FirefoxOptions();
-            if (Objects.equals(HEADLESS, "true")) {
+            if (Objects.equals(headlessProperty, "yes")) {
                 firefoxOptions.addArguments("--headless");
             }
             driver.set(new FirefoxDriver(firefoxOptions));
@@ -55,7 +50,7 @@ public class WeatherShoppersTestBase {
             Map<String, Object> preferences = new HashMap<>();
             preferences.put("profile.default_content_settings.popups", 0);
             chromeOptions.setExperimentalOption("prefs", preferences);
-            if (Objects.equals(HEADLESS, "true")){
+            if (Objects.equals(headlessProperty, "yes")) {
                 chromeOptions.addArguments("--headless");
             }
             driver.set(new ChromeDriver(chromeOptions));
@@ -80,6 +75,7 @@ public class WeatherShoppersTestBase {
     public void closeDown() throws InterruptedException {
         Thread.sleep(2000);
         getWebDriver().close();
+        log().info("Browser Closed");
     }
 
 }
