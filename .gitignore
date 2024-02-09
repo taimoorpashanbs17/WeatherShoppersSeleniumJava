@@ -7,21 +7,8 @@ target/
 .idea/modules.xml
 .idea/workspace.xml
 .idea/misc.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
-*.iml
-*.ipr
+.idea
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
 
 ### NetBeans ###
 /nbproject/private/
@@ -41,4 +28,4 @@ build/
 
 
 .settings/
-src/main/java/co/weathershoppers/assignment/roughwork/
+src/main/java/co/weathershoppers/assignment/roughwork
