@@ -4,6 +4,10 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -43,7 +47,7 @@ public class WeatherShoppersTestBase {
                 firefoxOptions.addArguments("--headless");
             }
             driver.set(new FirefoxDriver(firefoxOptions));
-        } else {
+        } if (browser.startsWith("chrome")) {
             WebDriverManager.chromedriver().setup();
             ChromeOptions chromeOptions = new ChromeOptions();
             WebDriverManager.chromedriver().setup();
@@ -54,6 +58,20 @@ public class WeatherShoppersTestBase {
                 chromeOptions.addArguments("--headless");
             }
             driver.set(new ChromeDriver(chromeOptions));
+        }  if (browser.startsWith("edge")) {
+            WebDriverManager.edgedriver().setup();
+            EdgeOptions edgeOptions = new EdgeOptions();
+            if (Objects.equals(headlessProperty, "yes")) {
+                edgeOptions.addArguments("--headless");
+            }
+            driver.set(new EdgeDriver(edgeOptions));
+        } if (browser.startsWith("safari")) {
+            WebDriverManager.safaridriver().setup();
+            SafariOptions safariOptions = new SafariOptions();
+            if (Objects.equals(headlessProperty, "yes")) {
+                safariOptions.setCapability("--headless", true);
+            }
+            driver.set(new SafariDriver(safariOptions));
         }
         driver.get().get(BASE_URL);
         driver.get().manage().window().maximize();

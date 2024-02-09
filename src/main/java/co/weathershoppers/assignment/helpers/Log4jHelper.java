@@ -8,12 +8,15 @@ import java.util.Properties;
 import static co.weathershoppers.assignment.helpers.PathHelper.getFile;
 import static co.weathershoppers.assignment.helpers.PathHelper.getFolderWithFile;
 import static co.weathershoppers.assignment.helpers.PathHelper.getDirectoryPath;
+import static co.weathershoppers.assignment.helpers.DateHelper.getCurrentDateAndTime;
 
 
 public class Log4jHelper {
 
     static final String propertiesFile = getFile("log4j.properties");
-    static final String logFile = getFolderWithFile("logs", "TestingAutomationLogs.log");
+    static final String getCurrentDateTime = getCurrentDateAndTime();
+    static final String logFile = getFolderWithFile("logs",
+            "TestingAutomationLogs_"+getCurrentDateTime+".log");
     static final String logDirectory = getDirectoryPath("logs");
 
     public static void createPropertyFile() throws IOException {

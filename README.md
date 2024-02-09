@@ -13,12 +13,9 @@ Automation Framework for Web app of [Weather Shopper](https://weathershopper.pyt
 
 **Reports** : Allure Reports
 
-**Browser** : Chrome and Firefox
+**Browser** : Chrome, Firefox, Edge and Safari
 
 **OS** : Any (Windows, Mac OSX, Linux)
-
-**Note**: Since latest versions of selenium does not support Chrome more than 114, so we shall be working with 
-Firefox now.
 
 ## Testing Scope
 
@@ -64,6 +61,9 @@ But Firefox can also be started with following command:
 ```bash
   mvn test -Dbrowser="firefox" 
 ```
+
+It supports 'Firefox', 'Edge' and 'Safari' browsers. and mention browser names in lower case, like `safari`, `firefox`, `edge`. 
+
 
 And if you want to run with headless, you have to pass arguments with ```headless``` and run command like:
 

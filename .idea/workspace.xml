@@ -5,12 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c931237-964d-4720-998c-77e724926e7a" name="Changes" comment="First Changes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/DateHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/ExcelHelpers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/WeatherShoppersTestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/WeatherShoppersTestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/constants/WeatherShoppersConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/constants/WeatherShoppersConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/Log4jHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/Log4jHelper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/PathHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/weathershoppers/assignment/helpers/PathHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/browser.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CartTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CartTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,15 +56,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/tp/Documents/Pract/WeatherShoppersSeleniumJava&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DateHelper.executor": "Run",
+    "Application.ExcelHelpers.executor": "Run",
+    "Application.PathHelper.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CartTests.testFillAndSubmitPaymentForm.executor": "Run",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/tp/Documents/Pract/WeatherShoppersSeleniumJava",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
@@ -68,13 +78,13 @@
       <recent name="co.weathershoppers.assignment.utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BasicRoughWork">
-    <configuration name="BasicRoughWork" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.roughwork.BasicRoughWork" />
+  <component name="RunManager" selected="Application.DateHelper">
+    <configuration name="DateHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.helpers.DateHelper" />
       <module name="WeatherShoppersSeleniumJava" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="co.weathershoppers.assignment.roughwork.*" />
+          <option name="PATTERN" value="co.weathershoppers.assignment.helpers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,8 +92,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FileHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.helpers.FileHelper" />
+    <configuration name="ExcelHelpers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="co.weathershoppers.assignment.helpers.ExcelHelpers" />
       <module name="WeatherShoppersSeleniumJava" />
       <extension name="coverage">
         <pattern>
@@ -120,11 +130,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTests.verifyShoppingUnderTemperatureCircumstances" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="MoisturizersTest.testMoisturizersAddLeastExpensiveProductOnCartFunctionality" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="WeatherShoppersSeleniumJava" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HomeTests" />
-      <option name="METHOD_NAME" value="verifyShoppingUnderTemperatureCircumstances" />
+      <option name="MAIN_CLASS_NAME" value="MoisturizersTest" />
+      <option name="METHOD_NAME" value="testMoisturizersAddLeastExpensiveProductOnCartFunctionality" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -134,13 +144,20 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BasicRoughWork" />
-        <item itemvalue="TestNG.HomeTests.verifyShoppingUnderTemperatureCircumstances" />
-        <item itemvalue="Application.FileHelper" />
-        <item itemvalue="Application.PathHelper" />
+        <item itemvalue="Application.DateHelper" />
         <item itemvalue="TestNG.CartTests.testFillAndSubmitPaymentForm" />
+        <item itemvalue="Application.ExcelHelpers" />
+        <item itemvalue="Application.PathHelper" />
+        <item itemvalue="TestNG.MoisturizersTest.testMoisturizersAddLeastExpensiveProductOnCartFunctionality" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-11.0.22-corretto-11.0.22-3183f394aec4-fdae186d" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -151,6 +168,15 @@
       <option name="presentableId" value="Default" />
       <updated>1677527610454</updated>
     </task>
+    <task id="LOCAL-00001" summary="Second Commit">
+      <option name="closed" value="true" />
+      <created>1700186226653</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700186226653</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +189,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Second Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second Commit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/WeatherShoppersSeleniumJava$HomeTests_verifyBuyMoisturizersButtonWorking.ic" NAME="HomeTests.verifyBuyMoisturizersButtonWorking Coverage Results" MODIFIED="1677534042677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

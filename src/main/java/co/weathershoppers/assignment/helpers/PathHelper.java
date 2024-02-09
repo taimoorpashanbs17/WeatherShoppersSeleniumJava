@@ -1,7 +1,6 @@
 package co.weathershoppers.assignment.helpers;
 
 
-import java.io.IOException;
 
 public class PathHelper {
     public static String getFile(String filename) {
@@ -65,4 +64,5 @@ public class PathHelper {
         }
         return absoluteFilePath;
     }
+
 }
